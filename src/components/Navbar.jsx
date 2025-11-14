@@ -24,16 +24,16 @@ export default function Navbar() {
         </Link>
 
  {/* Search bar */}
-<div className="hidden md:flex flex-1 justify-center mx-6">
-          <div className="relative w-full max-w-md">
-            <input
-              type="text"
-              placeholder="Search..."
-              className=" border border-gray-300 rounded-full py-2 pl-10 pr-4 focus:outline-none focus:ring-2 "
-            />
-            
-          </div>
-        </div>
+{/* Search bar (mobile + desktop) */}
+<div className="flex flex-1 justify-center mx-3 md:mx-6">
+  <div className="relative w-full max-w-md">
+    <input
+      type="text"
+      placeholder="Search..."
+      className="w-full border border-gray-300 rounded-full py-2 pl-10 pr-4 focus:outline-none focus:ring-2"
+    />
+  </div>
+</div>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-8 text-gray-700 font-medium">
