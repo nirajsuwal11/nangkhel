@@ -2,14 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
-import YoutubeIcon from '@mui/icons-material/Youtube';
+import YouTubeIcon from '@mui/icons-material/YouTube';   // ✅ FIXED
 import IconButton from '@mui/material/IconButton';
-
 
 export default function Footer() {
   return (
     <footer className="bg-violet-700 text-white py-10 mt-20">
       <div className="container mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-4 gap-8">
+
         {/* Column 1 */}
         <div>
           <h2 className="text-2xl font-bold mb-2">Lions of Nangkhel</h2>
@@ -46,44 +46,48 @@ export default function Footer() {
           >
             Donate Now
           </Link>
-          <div>
-<b>Get Connected </b>
-          </div>
-           <IconButton
-        component="a"
-        href="https://www.facebook.com/theLionsofNangkhel"  // Replace with your link
-        target="_blank"
-        rel="noopener noreferrer"
-        sx={{ color: '#1877F2' }}  // Facebook blue
-      >
-        <FacebookIcon />
-      </IconButton>
 
-      {/* Instagram */}
-      <IconButton
-        component="a"
-        href="https://www.instagram.com/yourprofile"  // Replace with your link
-        target="_blank"
-        rel="noopener noreferrer"
-        sx={{ color: '#E4405F' }}  // Instagram pink
-      >
-        <InstagramIcon />
-      </IconButton>
-      {/* Youtube */}
-      <IconButton
-        component="a"
-        href="http://www.youtube.com/@thelionsofnangkhel"  // Replace with your link
-        target="_blank"
-        rel="noopener noreferrer"
-        sx={{ color: '#910922ff' }}  // youtube red
-      >
-        <YoutubeIcon />
-      </IconButton>
-      
+          <div className="mt-4">
+            <b>Get Connected</b>
+          </div>
+
+          {/* Facebook */}
+          <IconButton
+            component="a"
+            href="https://www.facebook.com/theLionsofNangkhel"
+            target="_blank"
+            rel="noopener noreferrer"
+            sx={{ color: '#1877F2' }}
+          >
+            <FacebookIcon />
+          </IconButton>
+
+          {/* Instagram */}
+          <IconButton
+            component="a"
+            href="https://www.instagram.com/yourprofile"
+            target="_blank"
+            rel="noopener noreferrer"
+            sx={{ color: '#E4405F' }}
+          >
+            <InstagramIcon />
+          </IconButton>
+
+          {/* YouTube */}
+          <IconButton
+            component="a"
+            href="http://www.youtube.com/@thelionsofnangkhel"
+            target="_blank"
+            rel="noopener noreferrer"
+            sx={{ color: '#FF0000' }}
+          >
+            <YouTubeIcon />   {/* ✅ FIXED */}
+          </IconButton>
+
         </div>
-        
+
       </div>
-      
+
       <div className="border-t border-green-600 mt-8 pt-4 text-center text-sm text-white/80">
         © {new Date().getFullYear()} Lions of Nangkhel. All rights reserved.
       </div>
