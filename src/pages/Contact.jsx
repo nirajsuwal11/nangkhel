@@ -9,10 +9,10 @@ export default function Contact() {
 
     emailjs
       .sendForm(
-        "service_jxqj1fl",  // 🔹 Replace with your real Service ID
-        "template_mflem5l",       // ✅ Your Template ID
+        "service_jxqj1fl",  // service id
+        "template_mflem5l",       // template
         form.current,
-        "727qTLZtmzsEbPLWu"         // 🔹 Replace with your Public Key
+        "727qTLZtmzsEbPLWu"         // 🔹 Public Key
       )
       .then(
         (result) => {
