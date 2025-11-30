@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
-import { MessageCircle } from "lucide-react";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -49,14 +48,13 @@ export default function Navbar() {
   
   {/* WhatsApp Chat */}
   <a
-  href="https://wa.me/97798XXXXXXXX"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="flex items-center gap-2 bg-green-500 text-white px-3 py-2 rounded-lg hover:bg-green-600"
->
-  <MessageCircle size={18} />
-  WhatsApp
-</a>
+    href="https://wa.me/9779749844028"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex items-center gap-2 bg-green-500 text-white px-3 py-2 rounded-lg hover:bg-green-600"
+  >
+    Whatsapp
+  </a>
 
  
 
