@@ -42,7 +42,23 @@ export default function Navbar() {
           <Link to="/donate" className=" hover:text-green-600 transition">
             Donate
           </Link>
-          <Link to="/contact" className="hover:text-green-600 transition bg-blue-300 rounded-md px-4 py-1">Contact</Link>
+          <Link to="/contact" className="hover:text-green-600 transition ">Contact</Link>
+          <div className="flex items-center gap-3">
+  
+  {/* WhatsApp Chat */}
+  <a
+    href="https://wa.me/9779749844028"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex items-center gap-2 bg-green-500 text-white px-3 py-2 rounded-lg hover:bg-green-600"
+  >
+    Whatsapp
+  </a>
+
+ 
+
+</div>
+
         </div>
 
         {/* Mobile Menu Button */}
@@ -61,6 +77,21 @@ export default function Navbar() {
               Donate
             </Link>
             <Link to="/contact" onClick={toggleMenu} className="hover:text-green-600 transition">Contact</Link>
+            <div className="flex items-center gap-3">
+  
+  {/* WhatsApp Chat */}
+  <a
+    href="https://wa.me/9779749844028"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex items-center gap-2 bg-green-500 text-white px-3 py-2 rounded-lg hover:bg-green-600"
+  >
+    Whatsapp
+  </a>
+
+ 
+
+</div>
           </div>
         </div>
       )}
