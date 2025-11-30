@@ -53,7 +53,7 @@ export default function Navbar() {
     rel="noopener noreferrer"
     className="flex items-center gap-2 bg-green-500 text-white px-3 py-2 rounded-lg hover:bg-green-600"
   >
-    Whatsapp
+    Chat on Whatsapp
   </a>
 
  
