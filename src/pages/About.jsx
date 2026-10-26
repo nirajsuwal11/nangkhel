@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import bgImage from "../assets/image.png";
 import { Eye, Leaf, Target } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -35,38 +35,57 @@ const team = [
   { name: "Goldson Sukubhattu", role: "Member", img: goldson },
 ];
 
+const mission =
+  "To engage youth and community members through social service, education, cultural preservation, talent development and meaningful community initiatives.";
+const vision =
+  "To build an active, culturally conscious and socially responsible community where young people are empowered to contribute toward sustainable community development.";
+
 const impactAreas = [
   {
-    title: "Community Support",
+    title: "Educational Awareness",
     description:
-      "Showing up for our neighbors with practical help, compassion, and a commitment to belonging.",
+      "Supporting initiatives that encourage learning, awareness and personal development among young people and community members.",
     /* image: bgImage, */
-    imageAlt: "The Lions of Nangkhel team coming together",
+    imageAlt: "",
   },
   {
-    title: "Care & Kindness",
+    title: "Environmental Conservation",
     description:
-      "Putting our values into action and creating a culture where people look out for one another.",
+      "Promoting environmental responsibility and encouraging community participation in conservation activities.",
     /* image: ambika, */
-    imageAlt: "A member of the Lions of Nangkhel community",
+    imageAlt: "",
   },
   {
-    title: "Opportunity to Thrive",
+    title: "Cultural Heritage Promotion",
     description:
-      "Working toward a caring, inclusive community where everyone has room to live well and thrive.",
+      "Working to preserve, promote and create awareness about the cultural traditions and heritage of Nangkhel.",
     /* image: bishal, */
-    imageAlt: "A member of the Lions of Nangkhel community",
+    imageAlt: "",
   },
   {
-    title: "Lasting Change",
+    title: "Cultural Events",
     description:
-      "Bringing people together around shared purpose to help build a stronger Nangkhel.",
+      "Organizing and supporting cultural programs that provide platforms for community participation and local expression.",
     /* image: manish, */
-    imageAlt: "A member of the Lions of Nangkhel community",
+    imageAlt: "",
+  },
+  {
+    title: "Sports & Youth Activities",
+    description:
+      "Encouraging healthy participation, teamwork, discipline and leadership among young people.",
+    imageAlt: "",
+  },
+  {
+    title: "Community Service",
+    description:
+      "Engaging volunteers in activities that respond to the needs and interests of the local community.",
+    imageAlt: "",
   },
 ];
 
 export default function About({ showHero = true }) {
+  const [aboutExpanded, setAboutExpanded] = useState(false);
+
   return (
     <div className="min-h-screen bg-gray-50">
 
@@ -98,7 +117,7 @@ export default function About({ showHero = true }) {
               Our Mission
             </h2>
             <p className="leading-relaxed text-gray-700">
-              To provide sustainable support and resources to underprivileged communities.
+              {mission}
             </p>
           </div>
 
@@ -107,7 +126,7 @@ export default function About({ showHero = true }) {
               Our Vision
             </h2>
             <p className="leading-relaxed text-gray-700">
-              A world where every individual has the opportunity to thrive.
+              {vision}
             </p>
           </div>
         </section>
@@ -127,17 +146,23 @@ export default function About({ showHero = true }) {
               <h2 className="mb-5 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
                 About The Lions of Nangkhel
               </h2>
-              <p className="mb-7 leading-7 text-slate-700">
-                We are a community-led nonprofit bringing people together to
-                support our neighbors and create positive, lasting change in
-                Nangkhel.
+              <p
+                className="mb-7 overflow-hidden leading-7 transition-[max-height] duration-500 ease-in-out text-justify "
+                style={{ maxHeight: aboutExpanded ? "1000px" : "7rem" }}
+              >
+                TThe Lions of Nangkhel is a non-profit, community-based youth organization dedicated to serving the people of Bhaktapur through social, educational, cultural and developmental initiatives.
+Established with the vision of fostering responsible citizenship and collective community growth, the organization actively engages young people in meaningful activities that contribute to the betterment of society.
+The club believes that young people are not only the future of a community but also an important force in shaping its present. Through collective action, volunteerism, cultural participation and community service, The Lions of Nangkhel works toward building a more connected, responsible and culturally conscious society.
               </p>
-              <Link
-                to="/about"
+              <button
+                type="button"
+                aria-expanded={aboutExpanded}
+                onClick={() => setAboutExpanded((expanded) => !expanded)}
                 className="inline-flex items-center gap-2 rounded-lg bg-slate-900 px-6 py-3 font-semibold text-white transition hover:bg-amber-700"
               >
-                Learn More <span aria-hidden="true">→</span>
-              </Link>
+                {aboutExpanded ? "Read Less" : "Read More"}
+                <span aria-hidden="true">{aboutExpanded ? "↑" : "→"}</span>
+              </button>
             </div>
 
             <div className="space-y-9 lg:px-3">
@@ -146,8 +171,7 @@ export default function About({ showHero = true }) {
                 <div>
                   <h3 className="mb-2 text-xl font-bold text-slate-900">Our Vision</h3>
                   <p className="leading-6 text-slate-700">
-                    A caring, inclusive community where everyone has the
-                    opportunity to live well and thrive.
+                    {vision}
                   </p>
                 </div>
               </article>
@@ -156,8 +180,7 @@ export default function About({ showHero = true }) {
                 <div>
                   <h3 className="mb-2 text-xl font-bold text-slate-900">Our Mission</h3>
                   <p className="leading-6 text-slate-700">
-                    To bring people together and provide meaningful support and
-                    resources to our local community.
+                    {mission}
                   </p>
                 </div>
               </article>
@@ -169,7 +192,17 @@ export default function About({ showHero = true }) {
                 <h3 className="text-xl font-bold text-slate-900">Our Core Values</h3>
               </div>
               <ul className="space-y-3 text-slate-700">
-                {["Compassion", "Service", "Integrity", "Unity", "Respect", "Community"].map((value) => (
+                {[
+                  "Service",
+                  "Leadership",
+                  "Integrity",
+                  "Unity",
+                  "Inclusion",
+                  "Accountability",
+                  "Innovation",
+                  "Respect",
+                  "Sustainability",
+                ].map((value) => (
                   <li key={value} className="flex items-center gap-3">
                     <span className="h-1.5 w-1.5 rounded-full bg-amber-700" aria-hidden="true" />
                     {value}
@@ -186,7 +219,7 @@ export default function About({ showHero = true }) {
                 Together, we make a difference
               </p>
               <h2 className="mb-3 text-3xl font-extrabold tracking-tight sm:text-4xl">
-                Our Impact
+                Our Major Areas of Work
               </h2>
               <p className="text-base leading-7 text-slate-700 sm:text-lg">
                 Guided by our vision and mission, we bring neighbors together
@@ -194,7 +227,7 @@ export default function About({ showHero = true }) {
               </p>
             </header>
 
-            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {impactAreas.map((area) => (
                 <article
                   key={area.title}
@@ -225,7 +258,7 @@ export default function About({ showHero = true }) {
       )}
 
       {/* Team Section */}
-      <section className="-mx-4 bg-orange-500/20 px-4 py-12">
+      <section className="-mx-4 bg-slate-100 px-4 py-12">
         <div className="mx-auto w-full max-w-6xl sm:px-2 lg:px-4">
           <h2 className="mb-8 text-center text-3xl font-bold text-green-700">
             Meet Our Team

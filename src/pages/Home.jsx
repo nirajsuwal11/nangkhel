@@ -2,44 +2,44 @@ import { useEffect, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
-import groupPhoto from "../assets/image.png";
-import manish from "../assets/comittee/manish.jpg";
-import ambika from "../assets/comittee/ambika.png";
-import bishal from "../assets/comittee/bishal.png";
-import sunil from "../assets/comittee/sunil.jpg";
+import slidePhoto1 from "../assets/slidephotos/1.JPG";
+import slidePhoto2 from "../assets/slidephotos/2.png";
+import slidePhoto3 from "../assets/slidephotos/3.jpg";
+import slidePhoto4 from "../assets/slidephotos/4.jpg";
+import slidePhoto5 from "../assets/slidephotos/5.jpg";
 import About from "./About";
 
 const slides = [
   {
-    image: groupPhoto,
+    image: slidePhoto1,
     eyebrow: "Together, we make a difference",
     title: "The Lions of Nangkhel",
     description:
       "A community-led nonprofit working together to create a brighter future for everyone.",
   },
   {
-    image: manish,
+    image: slidePhoto2,
     eyebrow: "Stronger communities start with us",
     title: "People Helping People",
     description:
       "We bring people together to support our neighbors and build lasting change.",
   },
   {
-    image: ambika,
+    image: slidePhoto3,
     eyebrow: "Compassion in action",
     title: "Making a Difference",
     description:
       "Every act of kindness helps create new opportunities in our community.",
   },
   {
-    image: bishal,
+    image: slidePhoto4,
     eyebrow: "Local hands, lasting impact",
     title: "Growing Together",
     description:
       "Join our volunteers as we turn shared values into meaningful action.",
   },
   {
-    image: sunil,
+    image: slidePhoto5,
     eyebrow: "Your support matters",
     title: "Be Part of the Change",
     description:
@@ -53,7 +53,7 @@ export default function Home() {
   useEffect(() => {
     const intervalId = window.setInterval(() => {
       setActiveSlide((current) => (current + 1) % slides.length);
-    }, 6000);
+    }, 4000);
 
     return () => window.clearInterval(intervalId);
   }, []);

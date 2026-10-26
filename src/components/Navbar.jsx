@@ -5,6 +5,7 @@ import logo from "../assets/logo.png";
 
 const links = [
   { label: "About", to: "/about" },
+  { label: "Our Journey", to: "/ourjourney" },
   { label: "Activities/Events", to: "/projects" },
   { label: "Donate", to: "/donate" },
   { label: "Contact", to: "/contact" },
