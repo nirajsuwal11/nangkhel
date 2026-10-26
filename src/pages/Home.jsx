@@ -3,10 +3,10 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
 import groupPhoto from "../assets/image.png";
-import manish from "../assets/manish.jpg";
-import ambika from "../assets/ambika.jpg";
-import bishal from "../assets/bishal.jpg";
-import sunil from "../assets/sunil1.jpg";
+import manish from "../assets/comittee/manish.jpg";
+import ambika from "../assets/comittee/ambika.png";
+import bishal from "../assets/comittee/bishal.png";
+import sunil from "../assets/comittee/sunil.jpg";
 import About from "./About";
 
 const slides = [
