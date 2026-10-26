@@ -3,35 +3,36 @@ import bgImage from "../assets/image.png";
 import { Eye, Leaf, Target } from "lucide-react";
 import { Link } from "react-router-dom";
 import PersonCard from "../components/PersonCard";
-import manish from "../assets/manish.jpg";
-import sunil from "../assets/sunil1.jpg";
-import ambika from "../assets/ambika.jpg";
-import bishal from "../assets/bishal.jpg";
-import shristi from "../assets/shristi.jpg";
-import manish1 from "../assets/manish1.jpg";
-import shramit from "../assets/shramit.jpg";
-import sushant from "../assets/sushant.jpg";
-import rojina from "../assets/rojina.jpg";
-import b from "../assets/b.jpg";
+import manish from "../assets/comittee/manish.jpg";
+import sunil from "../assets/comittee/sunil.jpg";
+import bishal from "../assets/comittee/bishal.png";
+import shristi from "../assets/comittee/shristi.png";
+import manishSuku from "../assets/comittee/manish-suku.png";
+import bikash from "../assets/comittee/bikash.jpg";
+import kabina from "../assets/comittee/kabina.png";
+import ujjwala from "../assets/comittee/ujjwala.png";
+import ujwol from "../assets/comittee/ujwol.png";
+import ambika from "../assets/comittee/ambika.png";
+import shramit from "../assets/comittee/shramit.png";
+import sushan from "../assets/comittee/sushan.png";
+import rojina from "../assets/comittee/rojina.png";
+import goldson from "../assets/comittee/goldson.png";
 
 const team = [
   { name: "Manish Byanju", role: "Chairman", img: manish },
   { name: "Sunil Banmala", role: "Vice - Chairman", img: sunil },
   { name: "Bishal Sukkubhattu", role: "Secretary", img: bishal },
-   { name: "Shristi Kasula", role: "Assistant - Secratary", img: shristi },
-     { name: "Manish Sukubhattu", role: "Accountant", img: manish1 },
-      { name: "Bikash Byanju", role: "Member", img: b },
-     { name: "Ambika Suwal", role: "Member", img: ambika },
-
-   { name: "Shramit Kasula", role: "Member", img: shramit },
-     { name: "Sushant Byanju", role: "Member", img: sushant },
-     { name: "Rojina Byanju", role: "Member", img: rojina },
-    
-   
-
-
- 
-   
+  { name: "Shristi Kasula", role: "Assistant - Secratary", img: shristi },
+  { name: "Manish Sukubhattu", role: "Accountant", img: manishSuku },
+  { name: "Bikash Byanju", role: "Member", img: bikash },
+  { name: "Kabina Byanju", role: "Member", img: kabina },
+  { name: "Ujjwala Byanju", role: "Member", img: ujjwala },
+  { name: "Ujwol Byanju", role: "Member", img: ujwol },
+  { name: "Ambika Suwal", role: "Member", img: ambika },
+  { name: "Shramit Kasula", role: "Member", img: shramit },
+  { name: "Sushan Byanju", role: "Member", img: sushan },
+  { name: "Rojina Byanju", role: "Member", img: rojina },
+  { name: "Goldson Sukubhattu", role: "Member", img: goldson },
 ];
 
 const impactAreas = [
