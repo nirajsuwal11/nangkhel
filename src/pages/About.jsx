@@ -17,6 +17,7 @@ import shramit from "../assets/comittee/shramit.png";
 import sushan from "../assets/comittee/sushan.png";
 import rojina from "../assets/comittee/rojina.png";
 import goldson from "../assets/comittee/goldson.png";
+import educationalAwareness from "../assets/workareas/educational awarness .png";
 
 const team = [
   { name: "Manish Byanju", role: "Chairman", img: manish },
@@ -45,8 +46,8 @@ const impactAreas = [
     title: "Educational Awareness",
     description:
       "Supporting initiatives that encourage learning, awareness and personal development among young people and community members.",
-    /* image: bgImage, */
-    imageAlt: "",
+    image: educationalAwareness,
+    imageAlt: "Educational awareness activity",
   },
   {
     title: "Environmental Conservation",
@@ -233,14 +234,16 @@ The club believes that young people are not only the future of a community but a
                   key={area.title}
                   className="group overflow-hidden rounded-xl bg-white shadow-md transition duration-300 hover:-translate-y-2 hover:shadow-xl focus-within:-translate-y-2 focus-within:shadow-xl"
                 >
-                  <div className="h-56 overflow-hidden">
-                    <img
-                      src={area.image}
-                      alt={area.imageAlt}
-                      loading="lazy"
-                      className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
-                    />
-                  </div>
+                  {area.image && (
+                    <div className="h-56 overflow-hidden">
+                      <img
+                        src={area.image}
+                        alt={area.imageAlt}
+                        loading="lazy"
+                        className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                      />
+                    </div>
+                  )}
                   <div className="border-t-4 border-amber-600 px-5 py-6">
                     <h3 className="mb-3 text-xl font-bold text-slate-950">
                       {area.title}
