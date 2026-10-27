@@ -1,4 +1,5 @@
 import EventActivityNav from "../components/EventActivityNav";
+import mainEventImage from "../assets/event/main event.JPG";
 
 const objectives = [
   {
@@ -60,11 +61,12 @@ export default function Projects() {
     <main className="-mx-4 flex-1 bg-slate-50">
       <section className="relative isolate flex min-h-[440px] flex-col justify-center overflow-hidden bg-slate-950 px-4 py-16 text-white sm:min-h-[520px] sm:py-24">
         <div
-          className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-amber-700/35 via-slate-950 to-slate-950"
+          className="absolute inset-0 -z-10 bg-cover bg-center"
+          style={{ backgroundImage: `url(${mainEventImage})` }}
           aria-hidden="true"
         />
         <div
-          className="absolute -bottom-32 -left-20 -z-10 h-80 w-80 rounded-full bg-emerald-500/10 blur-3xl"
+          className="absolute inset-0 -z-10 bg-gradient-to-r from-slate-950/85 via-slate-950/60 to-slate-950/45"
           aria-hidden="true"
         />
         <EventActivityNav active="Event" />
@@ -78,7 +80,7 @@ export default function Projects() {
             </p>
           </aside>
         </div>
-        <div className="mx-auto w-full max-w-5xl text-center">
+        <div className="relative z-10 mx-auto w-full max-w-5xl text-center">
           <p className="mb-4 text-sm font-bold uppercase tracking-[0.24em] text-amber-300">
             Main Event
           </p>
@@ -100,19 +102,21 @@ export default function Projects() {
           <h2 className="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">
             Why Nangkhel Sanskritik Sanjh?
           </h2>
-          <p className="mt-6 text-base leading-8 text-slate-600 sm:text-lg">
-            Every year, the Lions of Nangkhel team organizes this cultural
-            program with continuous improvements and thoughtful planning,
-            introducing new ideas and activities to make each edition more
-            engaging, meaningful, and impactful while preserving and promoting
-            our cultural heritage for future generations.
-          </p>
+          
           <p className="mt-6 text-base leading-8 text-slate-600 sm:text-lg">
             In a rapidly changing society, cultural practices can gradually
             become disconnected from younger generations. Children and youth
             are increasingly exposed to diverse forms of entertainment and
             lifestyles, making it important to create spaces where they can
             experience their own culture in an engaging and meaningful way.
+          </p>
+
+          <p className="mt-6 text-base leading-8 text-slate-600 sm:text-lg">
+            Every year, the Lions of Nangkhel team organizes this cultural
+            program with continuous improvements and thoughtful planning,
+            introducing new ideas and activities to make each edition more
+            engaging, meaningful, and impactful while preserving and promoting
+            our cultural heritage for future generations.
           </p>
           <p className="mt-4 text-lg font-semibold leading-8 text-slate-900 sm:text-xl">
             Nangkhel Sanskritik Sanjh is designed as one such platform.

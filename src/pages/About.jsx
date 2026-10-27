@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import bgImage from "../assets/image.png";
+import logo from "../assets/logo.png";
 import { Eye, Leaf, Target } from "lucide-react";
 import { Link } from "react-router-dom";
 import PersonCard from "../components/PersonCard";
@@ -17,7 +18,15 @@ import shramit from "../assets/comittee/shramit.png";
 import sushan from "../assets/comittee/sushan.png";
 import rojina from "../assets/comittee/rojina.png";
 import goldson from "../assets/comittee/goldson.png";
-import educationalAwareness from "../assets/workareas/educational awarness .png";
+
+
+import educationalAwareness from "../assets/workareas/educational.jpg";
+import community from "../assets/workareas/commmunity service.jpg";
+import cultural from "../assets/workareas/cultural events.jpg";
+import culturalHeritage from "../assets/workareas/cultural heritage.jpg";
+import environmentalConservation from "../assets/workareas/environmental conservation.jpg";
+import youth from "../assets/workareas/youth activities.jpg";
+
 
 const team = [
   { name: "Manish Byanju", role: "Chairman", img: manish },
@@ -34,6 +43,7 @@ const team = [
   { name: "Sushan Byanju", role: "Member", img: sushan },
   { name: "Rojina Byanju", role: "Member", img: rojina },
   { name: "Goldson Sukubhattu", role: "Member", img: goldson },
+  { name: "Niraj Suwal", role: "Member" },
 ];
 
 const mission =
@@ -53,34 +63,36 @@ const impactAreas = [
     title: "Environmental Conservation",
     description:
       "Promoting environmental responsibility and encouraging community participation in conservation activities.",
-    /* image: ambika, */
-    imageAlt: "",
+    image: environmentalConservation,
+    imageAlt: "Environmental conservation activity",
   },
   {
     title: "Cultural Heritage Promotion",
     description:
       "Working to preserve, promote and create awareness about the cultural traditions and heritage of Nangkhel.",
-    /* image: bishal, */
-    imageAlt: "",
+    image: culturalHeritage,
+    imageAlt: "Cultural heritage promotion",
   },
   {
     title: "Cultural Events",
     description:
       "Organizing and supporting cultural programs that provide platforms for community participation and local expression.",
-    /* image: manish, */
-    imageAlt: "",
+    image: cultural,
+    imageAlt: "Community cultural event",
   },
   {
     title: "Sports & Youth Activities",
     description:
       "Encouraging healthy participation, teamwork, discipline and leadership among young people.",
-    imageAlt: "",
+    image: youth,
+    imageAlt: "Youth activity",
   },
   {
     title: "Community Service",
     description:
       "Engaging volunteers in activities that respond to the needs and interests of the local community.",
-    imageAlt: "",
+    image: community,
+    imageAlt: "Community service activity",
   },
 ];
 
@@ -92,7 +104,7 @@ export default function About({ showHero = true }) {
 
       {/* Hero Section */}
       {showHero && (
-        <section className="relative w-full min-h-[320px] overflow-hidden shadow-md">
+        <section className="relative w-full min-h-[400px] overflow-hidden shadow-md">
           <div
             className="absolute inset-0 bg-cover bg-center"
             style={{ backgroundImage: `url(${bgImage})` }}
@@ -100,9 +112,16 @@ export default function About({ showHero = true }) {
 
           <div className="absolute inset-0 bg-black/40"></div>
 
-          <div className="relative z-10 min-h-[320px] flex flex-col justify-center p-8 md:p-16 text-center text-white">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">About Us</h1>
-            <p className="text-lg md:text-xl leading-relaxed max-w-2xl mx-auto">
+          <div className="relative z-10 flex min-h-[400px] flex-col items-center justify-center p-8 text-center text-white md:p-16">
+            <img
+              src={logo}
+              alt="The Lions of Nangkhel logo"
+              className="mb-5 h-24 w-24 rounded-full bg-white object-contain p-1 shadow-xl sm:mb-6 sm:h-32 sm:w-32"
+            />
+            <h1 className="mb-4 text-4xl font-bold md:mb-6 md:text-5xl">
+              About Us
+            </h1>
+            <p className="mx-auto max-w-2xl text-lg leading-relaxed md:text-xl">
               The lions of Nangkhel is a nonprofit organization dedicated to making a
               positive impact in our community.
             </p>
