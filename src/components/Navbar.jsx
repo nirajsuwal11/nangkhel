@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { Menu, MessageCircle, Search, X } from "lucide-react";
+import { Menu, Search, X } from "lucide-react";
 import logo from "../assets/logo.png";
 
 const links = [
@@ -10,23 +10,6 @@ const links = [
   { label: "Donate", to: "/donate" },
   { label: "Contact", to: "/contact" },
 ];
-
-function WhatsAppLink({ mobile = false }) {
-  return (
-    <a
-      href="https://wa.me/9779749844028"
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="Chat on WhatsApp"
-      title="Chat on WhatsApp"
-      className={`inline-flex h-11 w-11 items-center justify-center rounded-full bg-green-600 text-white shadow-sm transition hover:bg-green-700 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 ${
-        mobile ? "mt-1" : ""
-      }`}
-    >
-      <MessageCircle size={21} aria-hidden="true" />
-    </a>
-  );
-}
 
 function SearchForm({ mobile = false, onSearch }) {
   const [query, setQuery] = useState("");
@@ -125,8 +108,6 @@ export default function Navbar() {
               {label}
             </Link>
           ))}
-          <span className="mx-2 h-7 w-px bg-slate-200" aria-hidden="true" />
-          <WhatsAppLink />
         </div>
 
         <button
@@ -149,14 +130,11 @@ export default function Navbar() {
                 key={to}
                 to={to}
                 onClick={closeMenu}
-                className={`${linkClass(to)} rounded-lg px-4 py-3`}
+                className={`${linkClass(to)} rounded-lg px-4 py-3 text-center`}
               >
                 {label}
               </Link>
             ))}
-            <div className="flex justify-end px-4 pt-2">
-              <WhatsAppLink mobile />
-            </div>
           </div>
         </div>
       )}

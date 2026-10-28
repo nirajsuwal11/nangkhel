@@ -1,6 +1,7 @@
 
 import { useEffect } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
@@ -41,6 +42,16 @@ function App() {
       </main>
       {!isActivityGallery && <Footer />}
     </div>
+    <a
+      href="https://wa.me/9779749844028"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Chat on WhatsApp"
+      title="Chat on WhatsApp"
+      className="fixed bottom-5 right-5 z-40 inline-flex h-14 w-14 items-center justify-center rounded-full bg-green-600 text-white shadow-lg transition hover:bg-green-700 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2"
+    >
+      <WhatsAppIcon fontSize="medium" aria-hidden="true" />
+    </a>
     </>
   )
 }
