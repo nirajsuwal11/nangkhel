@@ -1,4 +1,5 @@
 
+import { useEffect } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
@@ -13,8 +14,13 @@ import Footer from "./components/Footer";
 import './App.css'
 
 function App() {
-  const { pathname } = useLocation();
+  const location = useLocation();
+  const { pathname } = location;
   const isActivityGallery = /^\/activities\/[^/]+\/gallery\/?$/.test(pathname);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
 
   return (
     <>

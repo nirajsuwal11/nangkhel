@@ -103,7 +103,7 @@ export default function Projects() {
             Why Nangkhel Sanskritik Sanjh?
           </h2>
           
-          <p className="mt-6 text-base leading-8 text-slate-600 sm:text-lg">
+          <p className="mt-6 text-justify text-base leading-8 text-slate-600 sm:text-lg">
             In a rapidly changing society, cultural practices can gradually
             become disconnected from younger generations. Children and youth
             are increasingly exposed to diverse forms of entertainment and
@@ -111,7 +111,7 @@ export default function Projects() {
             experience their own culture in an engaging and meaningful way.
           </p>
 
-          <p className="mt-6 text-base leading-8 text-slate-600 sm:text-lg">
+          <p className="mt-6 text-justify text-base leading-8 text-slate-600 sm:text-lg">
             Every year, the Lions of Nangkhel team organizes this cultural
             program with continuous improvements and thoughtful planning,
             introducing new ideas and activities to make each edition more
