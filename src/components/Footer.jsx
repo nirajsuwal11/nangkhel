@@ -107,6 +107,7 @@ export default function Footer() {
 
       <div className="mt-8 border-t border-white/15 pt-4 text-center text-sm text-white/80">
         © {new Date().getFullYear()} Lions of Nangkhel. All rights reserved.
+        <p>Designed and Developed by Niraj Suwal  </p>
       </div>
     </footer>
   );
