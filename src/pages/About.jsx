@@ -12,7 +12,7 @@ import manishSuku from "../assets/comittee/manish-suku.png";
 import bikash from "../assets/comittee/bikash.jpg";
 import kabina from "../assets/comittee/kabina.png";
 import ujjwala from "../assets/comittee/ujjwala.png";
-import ujwol from "../assets/comittee/ujwol.png";
+import ujjwal from "../assets/comittee/ujwol.png";
 import ambika from "../assets/comittee/ambika.png";
 import shramit from "../assets/comittee/shramit.png";
 import sushan from "../assets/comittee/sushan.png";
@@ -37,7 +37,7 @@ const team = [
   { name: "Bikash Byanju", role: "Member", img: bikash },
   { name: "Kabina Byanju", role: "Member", img: kabina },
   { name: "Ujjwala Byanju", role: "Member", img: ujjwala },
-  { name: "Ujwol Byanju", role: "Member", img: ujwol },
+  { name: "Ujjwal Byanju", role: "Member", img: ujjwal },
   { name: "Ambika Suwal", role: "Member", img: ambika },
   { name: "Shramit Kasula", role: "Member", img: shramit },
   { name: "Sushan Byanju", role: "Member", img: sushan },
