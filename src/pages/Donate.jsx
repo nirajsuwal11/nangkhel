@@ -5,12 +5,12 @@ import {
   Heart,
   Landmark,
   Leaf,
-  QrCode,
   ShieldCheck,
   UsersRound,
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import communityImage from "../assets/image.png";
+import donationQr from "../assets/donation-qr.jpg";
 
 const impactAreas = [
   {
@@ -166,20 +166,14 @@ export default function Donate() {
 
           <div className="rounded-3xl border border-emerald-100 bg-white p-6 shadow-xl shadow-emerald-950/5 sm:p-8">
             <div className="text-center">
-              <div className="mx-auto flex aspect-square w-full max-w-[280px] flex-col items-center justify-center rounded-2xl border-2 border-dashed border-emerald-200 bg-emerald-50/70 p-6">
-                <QrCode
-                  size={56}
-                  strokeWidth={1.4}
-                  className="text-emerald-700"
-                  aria-hidden="true"
+              <div className="mx-auto w-full max-w-[320px] overflow-hidden rounded-2xl border border-emerald-100 bg-white">
+                <img
+                  src={donationQr}
+                  alt="Citizens Bank donation QR code"
+                  className="h-auto w-full"
                 />
-                <p className="mt-4 font-bold text-slate-800">
-                  Donation QR code
-                </p>
-                <p className="mt-1 text-sm text-slate-500">
-                  Official payment code coming soon
-                </p>
               </div>
+              <p className="mt-4 font-bold text-slate-800">Scan to donate</p>
               <div className="mt-6 inline-flex items-center gap-2 rounded-full bg-emerald-50 px-4 py-2 text-sm font-semibold text-emerald-800">
                 <ShieldCheck size={17} aria-hidden="true" />
                 Always verify recipient details

@@ -46,6 +46,13 @@ const team = [
   { name: "Niraj Suwal", role: "Member" },
 ];
 
+const chairman = team.find((member) => member.role === "Chairman");
+const viceChairman = team.find((member) => member.role === "Vice - Chairman");
+const officers = team.filter((member) =>
+  ["Secretary", "Assistant - Secratary", "Accountant"].includes(member.role),
+);
+const members = team.filter((member) => member.role === "Member");
+
 const mission =
   "To engage youth and community members through social service, education, cultural preservation, talent development and meaningful community initiatives.";
 const vision =
@@ -170,7 +177,7 @@ export default function About({ showHero = true }) {
                 className="mb-7 overflow-hidden leading-7 transition-[max-height] duration-500 ease-in-out text-justify "
                 style={{ maxHeight: aboutExpanded ? "1000px" : "7rem" }}
               >
-                TThe Lions of Nangkhel is a non-profit, community-based youth organization dedicated to serving the people of Bhaktapur through social, educational, cultural and developmental initiatives.
+                The Lions of Nangkhel is a non-profit, community-based youth organization dedicated to serving the people of Bhaktapur through social, educational, cultural and developmental initiatives.
 Established with the vision of fostering responsible citizenship and collective community growth, the organization actively engages young people in meaningful activities that contribute to the betterment of society.
 The club believes that young people are not only the future of a community but also an important force in shaping its present. Through collective action, volunteerism, cultural participation and community service, The Lions of Nangkhel works toward building a more connected, responsible and culturally conscious society.
               </p>
@@ -282,26 +289,90 @@ The club believes that young people are not only the future of a community but a
       {/* Team Section */}
       <section className="-mx-4 bg-slate-100 px-4 py-12">
         <div className="mx-auto w-full max-w-6xl sm:px-2 lg:px-4">
-          <h2 className="mb-8 text-center text-3xl font-bold text-green-700">
-            Meet Our Team
-             <p className="text-center text-base text-black italic bold font-normal">
-            "Behind our mission is a dedicated team of dreamers, doers, 
-            and community advocates. We don’t just work for the cause—we 
-            live it every single day. 
-            Get to know the people turning compassion into action."
-          </p>
+          <header className="mx-auto mb-10 max-w-3xl text-center">
+            <h2 className="text-3xl font-bold text-green-700 sm:text-4xl">
+              Meet Our Team
+            </h2>
+            <p className="mt-3 text-base italic leading-relaxed text-slate-700">
+              Behind our mission is a dedicated team of dreamers, doers, and
+              community advocates. Get to know the people turning compassion
+              into action.
+            </p>
+          </header>
 
-          </h2>
-         
-          <div className="mx-auto grid max-w-5xl grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-4">
-            {team.map((member) => (
-              <PersonCard
-                key={member.name}
-                name={member.name}
-                role={member.role}
-                img={member.img}
-              />
-            ))}
+          <div className="mx-auto flex max-w-5xl flex-col items-center">
+            {chairman && (
+              <div className="w-44 sm:w-52">
+                <PersonCard
+                  name={chairman.name}
+                  role={chairman.role}
+                  img={chairman.img}
+                />
+              </div>
+            )}
+
+            {chairman && viceChairman && (
+              <div className="h-8 w-px bg-emerald-400" aria-hidden="true" />
+            )}
+
+            {viceChairman && (
+              <div className="w-44 sm:w-52">
+                <PersonCard
+                  name={viceChairman.name}
+                  role={viceChairman.role}
+                  img={viceChairman.img}
+                />
+              </div>
+            )}
+
+            {viceChairman && officers.length > 0 && (
+              <div className="h-8 w-px bg-emerald-400" aria-hidden="true" />
+            )}
+
+            {officers.length > 0 && (
+              <div className="relative w-full max-w-4xl">
+                <div
+                  className="absolute left-[16.67%] right-[16.67%] top-0 hidden h-px bg-emerald-300 sm:block"
+                  aria-hidden="true"
+                />
+                <div className="grid gap-5 sm:grid-cols-3 sm:gap-6">
+                  {officers.map((member) => (
+                    <div
+                      key={member.name}
+                      className="relative mx-auto w-44 pt-0 sm:w-full sm:pt-6 before:hidden sm:before:absolute sm:before:left-1/2 sm:before:top-0 sm:before:block sm:before:h-6 sm:before:w-px sm:before:bg-emerald-300"
+                    >
+                      <PersonCard
+                        name={member.name}
+                        role={member.role}
+                        img={member.img}
+                      />
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {officers.length > 0 && members.length > 0 && (
+              <div className="h-8 w-px bg-emerald-400" aria-hidden="true" />
+            )}
+
+            {members.length > 0 && (
+              <div className="w-full">
+                <h3 className="mb-5 text-center text-sm font-bold uppercase tracking-[0.18em] text-emerald-800">
+                  Members
+                </h3>
+                <div className="mx-auto grid max-w-5xl grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-6 lg:grid-cols-5">
+                  {members.map((member) => (
+                    <PersonCard
+                      key={member.name}
+                      name={member.name}
+                      role={member.role}
+                      img={member.img}
+                    />
+                  ))}
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </section>

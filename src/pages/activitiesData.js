@@ -1,4 +1,10 @@
 import publicSpeakingCover from "../assets/gallery/655710275_1852437282183199_25629550421314664_n.jpg";
+import designCover from "../assets/workareas/educational.jpg";
+import culturalProgramCover from "../assets/workareas/cultural events.jpg";
+import communityServiceCover from "../assets/workareas/commmunity service.jpg";
+import culturalHeritageCover from "../assets/workareas/cultural heritage.jpg";
+import environmentCover from "../assets/workareas/environmental conservation.jpg";
+import youthCover from "../assets/workareas/youth activities.jpg";
 
 const speakingGallery = Object.entries(
   import.meta.glob(
@@ -17,6 +23,7 @@ export const activities = [
     description:
       "Joined and supported the Design Sketch program organized by Bhaktapur Diaries, creating a space for young people to explore their creativity.",
     gallery: [],
+    coverImage: designCover,
   },
   {
     id: "cultural-program",
@@ -25,6 +32,7 @@ export const activities = [
     description:
       "Supported cultural programming and brought club members together to celebrate local traditions and community participation.",
     gallery: [],
+    coverImage: culturalProgramCover,
   },
   {
     id: "elders-day",
@@ -33,6 +41,7 @@ export const activities = [
     description:
       "Spent time with senior members of the community through a shared outing and refreshments, recognizing and celebrating their contributions.",
     gallery: [],
+    coverImage: communityServiceCover,
   },
   {
     id: "temple-support",
@@ -41,6 +50,7 @@ export const activities = [
     description:
       "Worked alongside local youth in support of temple improvement, contributing volunteer time to a community heritage initiative.",
     gallery: [],
+    coverImage: culturalHeritageCover,
   },
   {
     id: "dhungedhara-cleanup",
@@ -49,6 +59,7 @@ export const activities = [
     description:
       "Took part in a community cleanup around Dhungedhara, encouraging shared responsibility for local public spaces.",
     gallery: [],
+    coverImage: environmentCover,
   },
   {
     id: "public-speaking",
@@ -66,6 +77,7 @@ export const activities = [
     description:
       "Participated in the campaign to recognize and promote a child-friendly municipality, supporting a community where young people can thrive.",
     gallery: [],
+    coverImage: youthCover,
   },
   {
     id: "cultural-baja-dance",
@@ -74,5 +86,6 @@ export const activities = [
     description:
       "Celebrated Nangkhel’s cultural identity through traditional music and dance, helping pass local heritage on to the next generation.",
     gallery: [],
+    coverImage: culturalProgramCover,
   },
 ];
