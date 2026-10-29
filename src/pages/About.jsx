@@ -18,6 +18,7 @@ import shramit from "../assets/comittee/shramit.png";
 import sushan from "../assets/comittee/sushan.png";
 import rojina from "../assets/comittee/rojina.png";
 import goldson from "../assets/comittee/goldson.png";
+import niraj from "../assets/comittee/niraj-suwal.jpg";
 
 
 import educationalAwareness from "../assets/workareas/educational.jpg";
@@ -43,7 +44,7 @@ const team = [
   { name: "Sushan Byanju", role: "Member", img: sushan },
   { name: "Rojina Byanju", role: "Member", img: rojina },
   { name: "Goldson Sukubhattu", role: "Member", img: goldson },
-  { name: "Niraj Suwal", role: "Member" },
+  { name: "Niraj Suwal", role: "Member", img: niraj },
 ];
 
 const chairman = team.find((member) => member.role === "Chairman");

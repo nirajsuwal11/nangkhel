@@ -69,13 +69,13 @@ export default function Projects() {
           className="absolute inset-0 -z-10 bg-gradient-to-r from-slate-950/85 via-slate-950/60 to-slate-950/45"
           aria-hidden="true"
         />
-        <EventActivityNav active="Event" />
-        <div className="absolute right-4 top-5 flex max-w-7xl justify-end sm:right-8 sm:top-8 lg:right-12">
-          <aside className="max-w-md border-r-4 border-amber-400 pr-4 text-right sm:pr-6">
-            <p className="text-[9px] font-extrabold uppercase tracking-[0.14em] text-amber-300 sm:text-[7px]">
+        <div className="absolute inset-x-4 top-4 z-10 flex items-center justify-between gap-2 sm:inset-x-8 sm:top-8 lg:inset-x-12">
+          <EventActivityNav active="Event" className="static" />
+          <aside className="min-w-0 border-r-4 border-amber-400 pr-2 text-right sm:max-w-md sm:pr-6">
+            <p className="text-[8px] font-extrabold uppercase leading-tight tracking-[0.08em] text-amber-300 sm:text-[9px] sm:tracking-[0.14em]">
               Every community has talent.
             </p>
-            <p className="mt-1 text-xs font-black uppercase leading-tight tracking-wide text-white sm:text-sm">
+            <p className="mt-1 text-[10px] font-black uppercase leading-tight tracking-wide text-white sm:text-sm">
               Every talent deserves a stage.
             </p>
           </aside>

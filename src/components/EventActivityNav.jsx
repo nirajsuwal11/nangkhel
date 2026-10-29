@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
 
-export default function EventActivityNav({ active }) {
+export default function EventActivityNav({
+  active,
+  className = "absolute left-4 top-5 sm:left-8 sm:top-8 lg:left-12",
+}) {
   const links = [
     { label: "Event", to: "/projects" },
     { label: "Activities", to: "/activities" },
@@ -9,7 +12,7 @@ export default function EventActivityNav({ active }) {
   return (
     <nav
       aria-label="Event and activities"
-      className="absolute left-4 top-5 z-10 flex gap-1 rounded-full border border-white/15 bg-white/10 p-1 backdrop-blur sm:left-8 sm:top-8 lg:left-12"
+      className={`z-10 flex shrink-0 gap-1 rounded-full border border-white/15 bg-white/10 p-1 backdrop-blur ${className}`}
     >
       {links.map(({ label, to }) => (
         <Link
