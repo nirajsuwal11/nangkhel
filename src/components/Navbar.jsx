@@ -166,42 +166,6 @@ export default function Navbar() {
             isOpen ? "translate-x-0" : "-translate-x-full"
           }`}
         >
-          <div className="relative overflow-hidden bg-gradient-to-br from-emerald-950 via-emerald-900 to-slate-900 px-5 pb-6 pt-5 text-white">
-            <div
-              className="pointer-events-none absolute -right-10 -top-14 h-40 w-40 rounded-full border-[24px] border-white/5"
-              aria-hidden="true"
-            />
-            <div className="relative flex items-center gap-3">
-              <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-white p-1.5 shadow-lg shadow-black/20">
-                <img
-                  src={logo}
-                  alt=""
-                  className="h-full w-full object-contain"
-                />
-              </span>
-              <div className="min-w-0">
-                <p className="text-sm font-extrabold tracking-tight">
-                  The Lions of Nangkhel
-                </p>
-                <p className="mt-1 text-xs text-emerald-100/80">
-                  Together we make the difference
-                </p>
-              </div>
-            </div>
-            <div className="relative mt-6 flex items-end justify-between">
-              <div>
-                <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-amber-300">
-                  Welcome
-                </p>
-                <h2 className="mt-1 text-2xl font-bold tracking-tight">
-                  Explore
-                </h2>
-              </div>
-              <span className="rounded-full border border-white/15 bg-white/10 px-3 py-1 text-xs font-medium text-white/80">
-                Menu
-              </span>
-            </div>
-          </div>
           <div className="flex flex-1 flex-col px-4 pb-5 pt-5">
             <SearchForm mobile onSearch={submitSearch} />
             <p className="mb-2 mt-4 px-2 text-[11px] font-bold uppercase tracking-[0.18em] text-slate-400">
