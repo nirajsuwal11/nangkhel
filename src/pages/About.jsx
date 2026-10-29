@@ -307,6 +307,7 @@ The club believes that young people are not only the future of a community but a
                   name={chairman.name}
                   role={chairman.role}
                   img={chairman.img}
+                  bio={chairman.bio}
                 />
               </div>
             )}
@@ -321,6 +322,7 @@ The club believes that young people are not only the future of a community but a
                   name={viceChairman.name}
                   role={viceChairman.role}
                   img={viceChairman.img}
+                  bio={viceChairman.bio}
                 />
               </div>
             )}
@@ -345,6 +347,7 @@ The club believes that young people are not only the future of a community but a
                         name={member.name}
                         role={member.role}
                         img={member.img}
+                        bio={member.bio}
                       />
                     </div>
                   ))}
@@ -368,6 +371,7 @@ The club believes that young people are not only the future of a community but a
                       name={member.name}
                       role={member.role}
                       img={member.img}
+                      bio={member.bio}
                     />
                   ))}
                 </div>
