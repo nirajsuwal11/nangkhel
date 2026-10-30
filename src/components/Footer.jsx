@@ -14,16 +14,20 @@ export default function Footer() {
         {/* Column 1 */}
         <div>
           <div className="mb-2 flex items-center gap-3">
-          <img
-            src={logo}
-            alt="The Lions of Nangkhel logo"
-            className="h-10 w-10 object-contain"
-          />
-            <h2 className="text-2xl font-bold">Lions of Nangkhel</h2>
+            <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-white shadow-sm ring-1 ring-slate-200">
+              <img
+                src={logo}
+                alt="The Lions of Nangkhel logo"
+                className="h-10 w-10 object-contain"
+              />
+            </span>
+            <div>
+              <h2 className="text-2xl font-bold">Lions of Nangkhel</h2>
+              <p className="text-sm font-semibold italic text-white">
+                Together we make a difference.
+              </p>
+            </div>
           </div>
-          <p className="mb-2 text-sm font-semibold italic text-white">
-            Together we make a difference.
-          </p>
           <p className="text-sm text-white/80">
             Empowering communities through education, healthcare, and kindness.
           </p>

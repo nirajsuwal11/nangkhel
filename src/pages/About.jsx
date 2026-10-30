@@ -301,7 +301,7 @@ The club believes that young people are not only the future of a community but a
             </p>
           </header>
 
-          <div className="mx-auto flex max-w-5xl flex-col items-center">
+          <div className="mx-auto flex max-w-5xl flex-col items-center gap-6">
             {chairman && (
               <div className="w-44 sm:w-52">
                 <PersonCard
@@ -311,10 +311,6 @@ The club believes that young people are not only the future of a community but a
                   bio={chairman.bio}
                 />
               </div>
-            )}
-
-            {chairman && viceChairman && (
-              <div className="h-8 w-px bg-emerald-400" aria-hidden="true" />
             )}
 
             {viceChairman && (
@@ -328,21 +324,13 @@ The club believes that young people are not only the future of a community but a
               </div>
             )}
 
-            {viceChairman && officers.length > 0 && (
-              <div className="h-8 w-px bg-emerald-400" aria-hidden="true" />
-            )}
-
             {officers.length > 0 && (
               <div className="relative w-full max-w-4xl">
-                <div
-                  className="absolute left-[16.67%] right-[16.67%] top-0 hidden h-px bg-emerald-300 sm:block"
-                  aria-hidden="true"
-                />
                 <div className="grid gap-5 sm:grid-cols-3 sm:gap-6">
                   {officers.map((member) => (
                     <div
                       key={member.name}
-                      className="relative mx-auto w-44 pt-0 sm:w-full sm:pt-6 before:hidden sm:before:absolute sm:before:left-1/2 sm:before:top-0 sm:before:block sm:before:h-6 sm:before:w-px sm:before:bg-emerald-300"
+                      className="relative mx-auto w-44 sm:w-full"
                     >
                       <PersonCard
                         name={member.name}
@@ -356,16 +344,12 @@ The club believes that young people are not only the future of a community but a
               </div>
             )}
 
-            {officers.length > 0 && members.length > 0 && (
-              <div className="h-8 w-px bg-emerald-400" aria-hidden="true" />
-            )}
-
             {members.length > 0 && (
               <div className="w-full">
                 <h3 className="mb-5 text-center text-sm font-bold uppercase tracking-[0.18em] text-emerald-800">
                   Members
                 </h3>
-                <div className="mx-auto grid max-w-5xl grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-6 lg:grid-cols-5">
+                <div className="mx-auto grid max-w-5xl grid-cols-2 gap-6 sm:grid-cols-3 sm:gap-8 lg:grid-cols-4">
                   {members.map((member) => (
                     <PersonCard
                       key={member.name}
