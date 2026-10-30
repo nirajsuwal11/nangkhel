@@ -24,7 +24,7 @@ export default function OurJourney() {
         </div>
       </section>
 
-      <div className="mx-auto w-full max-w-5xl py-8 sm:py-10">
+      <div className="mx-auto w-full max-w-5xl space-y-6 py-8 sm:py-10">
         <div className="rounded-3xl border border-slate-200/80 bg-white p-6 shadow-sm sm:p-10 lg:p-12">
           <div className="relative space-y-7 border-l-2 border-amber-200 pl-6 sm:pl-8">
             <span
