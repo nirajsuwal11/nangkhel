@@ -41,7 +41,7 @@ function SearchForm({ mobile = false, onSearch }) {
       className={`flex items-center gap-2 border border-slate-200 bg-slate-50 text-slate-400 transition focus-within:border-blue-600 focus-within:bg-white focus-within:ring-2 focus-within:ring-blue-100 ${
         mobile
           ? "mb-2 rounded-lg px-4 py-3"
-          : "mx-4 hidden max-w-sm flex-1 rounded-full px-4 py-2 lg:flex"
+          : "mx-4 hidden max-w-xs flex-1 rounded-full px-4 py-2 lg:flex"
       }`}
     >
       <label className="sr-only" htmlFor={mobile ? "mobile-site-search" : "desktop-site-search"}>
@@ -59,7 +59,7 @@ function SearchForm({ mobile = false, onSearch }) {
       <button
         type="submit"
         aria-label="Submit search"
-        className="rounded-full p-1 text-slate-500 transition hover:bg-blue-100 hover:text-blue-800"
+        className="rounded-full p-0.5 text-slate-500 transition hover:bg-blue-100 hover:text-blue-800"
       >
         <Search size={17} aria-hidden="true" />
       </button>
@@ -157,12 +157,12 @@ export default function Navbar() {
           tabIndex={-1}
           aria-label="Close navigation menu"
           onClick={closeMenu}
-          className={`absolute inset-0 bg-slate-950/40 backdrop-blur-[2px] transition-opacity duration-300 motion-reduce:transition-none ${
+          className={`absolute inset-0 bg-slate-950/40 transition-opacity duration-300 motion-reduce:transition-none ${
             isOpen ? "opacity-100" : "pointer-events-none opacity-0"
           }`}
         />
         <div
-          className={`absolute inset-y-0 left-0 flex w-[min(88vw,390px)] flex-col overflow-y-auto border-r border-slate-200 bg-slate-50 shadow-2xl transition-transform duration-300 ease-out motion-reduce:transition-none ${
+          className={`absolute inset-y-0 left-0 flex w-[min(88vw,390px)] flex-col overflow-y-auto border-r border-slate-200 bg-slate-50 shadow-2xl transform-gpu will-change-transform transition-transform duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] motion-reduce:transition-none ${
             isOpen ? "translate-x-0" : "-translate-x-full"
           }`}
         >

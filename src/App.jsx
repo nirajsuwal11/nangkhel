@@ -1,6 +1,6 @@
 
 import { useEffect } from "react";
-import { Routes, Route, useLocation } from "react-router-dom";
+import { Routes, Route, useLocation, useNavigationType } from "react-router-dom";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
@@ -16,12 +16,14 @@ import './App.css'
 
 function App() {
   const location = useLocation();
+  const navigationType = useNavigationType();
   const { pathname } = location;
   const isActivityGallery = /^\/activities\/[^/]+\/gallery\/?$/.test(pathname);
 
   useEffect(() => {
+    if (navigationType === "POP") return;
     window.scrollTo(0, 0);
-  }, [location]);
+  }, [location, navigationType]);
 
   return (
     <>

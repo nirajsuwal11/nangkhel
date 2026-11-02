@@ -1,10 +1,11 @@
 import { useRef } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
-import { useParams } from "react-router-dom";
+import { ChevronLeft, ChevronRight, X } from "lucide-react";
+import { useNavigate, useParams } from "react-router-dom";
 import { activities } from "./activitiesData";
 
 export default function ActivityGallery() {
   const { activityId } = useParams();
+  const navigate = useNavigate();
   const activity = activities.find((item) => item.id === activityId);
   const galleryRef = useRef(null);
 
@@ -31,8 +32,18 @@ export default function ActivityGallery() {
   return (
     <main
       aria-label={`${activity.title} photo gallery`}
-      className="flex min-h-screen items-center bg-black px-2 py-6 sm:px-4"
+      className="relative flex min-h-screen items-center bg-black px-2 py-6 sm:px-4"
     >
+      <button
+        type="button"
+        onClick={() => navigate(-1)}
+        aria-label="Close gallery"
+        title="Close gallery"
+        className="absolute right-4 top-4 z-20 flex h-10 w-10 items-center justify-center rounded-full bg-white/15 text-white transition hover:bg-white/30 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
+      >
+        <X size={22} aria-hidden="true" />
+      </button>
+
       <div className="mx-auto flex w-full max-w-[1600px] items-center gap-2 sm:gap-4">
         <button
           type="button"

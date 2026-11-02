@@ -3,7 +3,7 @@ import { MapPin, Phone } from "lucide-react";
 import emailjs from "@emailjs/browser";
 
 const mapUrl =
-  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14136.93286688579!2d85.43941848961299!3d27.648255327089267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb0fefb9f17c9d%3A0xe2dc0b0738112c0c!2sNangkhel%20Gaun%2C%20Suryabinayak%2C%20Bagmati%20Province!5e0!3m2!1sen!2snp!4v1792575656199!5m2!1sen!2snp";
+  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2653.686079559195!2d85.32284807397626!3d27.713705725213767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb190f0d9dc97d%3A0xd07818f10e2e8906!2sNandikeshwar%20Mahadev!5e1!3m2!1sen!2snp!4v1793637263526!5m2!1sen!2snp";
 const directionsUrl =
   "https://www.google.com/maps/search/?api=1&query=Nangkhel%2C+Suryabinayak%2C+Nepal";
 
@@ -118,7 +118,7 @@ export default function Contact() {
 
             <div className="mt-8 overflow-hidden rounded-2xl border border-white/20 bg-white/10">
               <iframe
-                title="Map showing Nangkhel, Suryabinayak, Nepal"
+                title="Map showing Nandikeshwar Mahadev, Nepal"
                 src={mapUrl}
                 className="h-64 w-full border-0 sm:h-72"
                 loading="lazy"

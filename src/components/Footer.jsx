@@ -95,7 +95,7 @@ export default function Footer() {
               <YouTubeIcon fontSize="small" aria-hidden="true" />
             </a>
             <a
-              href="https://wa.me/9779860117094"
+              href="https://wa.me/9779809364001"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Message The Lions of Nangkhel on WhatsApp"
