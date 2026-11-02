@@ -10,7 +10,7 @@ export default function Activities() {
     <main className="-mx-4 flex-1 bg-slate-50">
       <section className="relative isolate overflow-hidden bg-slate-950 px-5 pb-14 pt-28 text-white sm:px-8 sm:pb-20 sm:pt-32 lg:px-12">
         <div
-          className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-emerald-900/60 via-slate-950 to-slate-950"
+          className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-blue-900/60 via-slate-950 to-slate-950"
           aria-hidden="true"
         />
         <div
@@ -40,7 +40,7 @@ export default function Activities() {
             </a>
             <div className="mt-9 flex items-center gap-3 text-sm text-slate-400">
               <span className="flex -space-x-2" aria-hidden="true">
-                <span className="h-3 w-3 rounded-full border-2 border-slate-950 bg-emerald-400" />
+                <span className="h-3 w-3 rounded-full border-2 border-slate-950 bg-blue-400" />
                 <span className="h-3 w-3 rounded-full border-2 border-slate-950 bg-amber-300" />
                 <span className="h-3 w-3 rounded-full border-2 border-slate-950 bg-sky-300" />
               </span>
@@ -101,7 +101,7 @@ export default function Activities() {
               connections across our community.
             </p>
           </div>
-          <span className="inline-flex w-fit items-center rounded-full bg-emerald-50 px-4 py-2 text-sm font-semibold text-emerald-800 ring-1 ring-emerald-100">
+          <span className="inline-flex w-fit items-center rounded-full bg-blue-50 px-4 py-2 text-sm font-semibold text-blue-800 ring-1 ring-blue-100">
             {activities.length} community stories
           </span>
         </header>
@@ -110,7 +110,7 @@ export default function Activities() {
           {activities.map((activity, index) => (
             <article
               key={activity.id}
-              className="group flex flex-col overflow-hidden rounded-2xl border border-slate-200/80 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:border-emerald-200 hover:shadow-xl"
+              className="group flex flex-col overflow-hidden rounded-2xl border border-slate-200/80 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:border-blue-200 hover:shadow-xl"
             >
               {activity.coverImage && (
                 <div className="relative aspect-[16/10] overflow-hidden bg-slate-100">
@@ -132,7 +132,7 @@ export default function Activities() {
               )}
               <div className="flex flex-1 flex-col p-5 sm:p-6">
                 <div className="mb-4 flex items-center justify-between gap-3">
-                  <span className="text-xs font-bold tracking-[0.16em] text-emerald-700">
+                  <span className="text-xs font-bold tracking-[0.16em] text-blue-700">
                     STORY {String(index + 1).padStart(2, "0")}
                   </span>
                   {activity.gallery.length > 0 && (
@@ -151,7 +151,7 @@ export default function Activities() {
                 {activity.gallery.length > 0 ? (
                   <Link
                     to={`/activities/${activity.id}/gallery`}
-                    className="mt-5 inline-flex min-h-11 w-fit items-center gap-2 rounded-lg border border-emerald-800/20 px-4 py-2.5 text-sm font-bold text-emerald-800 transition hover:border-emerald-800 hover:bg-emerald-800 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-700 focus-visible:ring-offset-2"
+                    className="mt-5 inline-flex min-h-11 w-fit items-center gap-2 rounded-lg border border-blue-800/20 px-4 py-2.5 text-sm font-bold text-blue-800 transition hover:border-blue-800 hover:bg-blue-800 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-700 focus-visible:ring-offset-2"
                   >
                     <Images size={17} aria-hidden="true" />
                     View photos

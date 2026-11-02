@@ -57,7 +57,7 @@ export default function Footer() {
           <h3 className="text-lg font-semibold mb-3">Get Involved</h3>
           <Link
             to="/donate"
-            className="inline-block bg-white text-green-700 font-semibold px-4 py-2 rounded-md hover:bg-gray-200 transition"
+            className="inline-block bg-blue-700 text-white font-semibold px-4 py-2 rounded-md hover:bg-green-600 transition"
           >
             Donate Now
           </Link>

@@ -10,7 +10,7 @@ export default function PersonCard({
   const bioId = useId();
 
   return (
-    <article className="group relative aspect-[4/4.5] w-full overflow-hidden rounded-xl bg-slate-200 text-left shadow-md ring-1 ring-slate-900/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:ring-emerald-500/50">
+    <article className="group relative aspect-[4/4.5] w-full overflow-hidden rounded-xl bg-slate-200 text-left shadow-md ring-1 ring-slate-900/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:ring-blue-500/50">
       {img ? (
         <img
           src={img}

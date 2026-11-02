@@ -38,7 +38,7 @@ function SearchForm({ mobile = false, onSearch }) {
     <form
       onSubmit={handleSubmit}
       role="search"
-      className={`flex items-center gap-2 border border-slate-200 bg-slate-50 text-slate-400 transition focus-within:border-green-600 focus-within:bg-white focus-within:ring-2 focus-within:ring-green-100 ${
+      className={`flex items-center gap-2 border border-slate-200 bg-slate-50 text-slate-400 transition focus-within:border-blue-600 focus-within:bg-white focus-within:ring-2 focus-within:ring-blue-100 ${
         mobile
           ? "mb-2 rounded-lg px-4 py-3"
           : "mx-4 hidden max-w-sm flex-1 rounded-full px-4 py-2 lg:flex"
@@ -59,7 +59,7 @@ function SearchForm({ mobile = false, onSearch }) {
       <button
         type="submit"
         aria-label="Submit search"
-        className="rounded-full p-1 text-slate-500 transition hover:bg-green-100 hover:text-green-800"
+        className="rounded-full p-1 text-slate-500 transition hover:bg-blue-100 hover:text-blue-800"
       >
         <Search size={17} aria-hidden="true" />
       </button>
@@ -92,8 +92,8 @@ export default function Navbar() {
   const linkClass = (to) =>
     `rounded-full px-4 py-2 text-sm font-semibold transition ${
       pathname === to
-        ? "bg-green-50 text-green-800"
-        : "text-slate-700 hover:bg-slate-100 hover:text-green-800"
+        ? "bg-blue-50 text-blue-800"
+        : "text-slate-700 hover:bg-slate-100 hover:text-blue-800"
     }`;
 
   return (
@@ -181,17 +181,17 @@ export default function Navbar() {
                     to={to}
                     onClick={closeMenu}
                     aria-current={isActive ? "page" : undefined}
-                    className={`group flex min-h-14 items-center gap-3 rounded-xl px-3 transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-600 ${
+                    className={`group flex min-h-14 items-center gap-3 rounded-xl px-3 transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 ${
                       isActive
-                        ? "bg-white text-emerald-900 shadow-sm ring-1 ring-emerald-100"
-                        : "text-slate-700 hover:bg-white hover:text-emerald-900 hover:shadow-sm"
+                        ? "bg-white text-blue-900 shadow-sm ring-1 ring-blue-100"
+                        : "text-slate-700 hover:bg-white hover:text-blue-900 hover:shadow-sm"
                     }`}
                   >
                     <span
                       className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-xl transition ${
                         isActive
-                          ? "bg-emerald-800 text-white"
-                          : "bg-white text-emerald-800 ring-1 ring-slate-200 group-hover:bg-emerald-50 group-hover:ring-emerald-100"
+                          ? "bg-blue-800 text-white"
+                          : "bg-white text-blue-800 ring-1 ring-slate-200 group-hover:bg-blue-50 group-hover:ring-blue-100"
                       }`}
                     >
                       {icon}
@@ -203,7 +203,7 @@ export default function Navbar() {
                     <ChevronRight
                       size={16}
                       className={`text-slate-400 transition-transform group-hover:translate-x-0.5 ${
-                        isActive ? "text-emerald-700" : ""
+                        isActive ? "text-blue-700" : ""
                       }`}
                       aria-hidden="true"
                     />
@@ -214,7 +214,7 @@ export default function Navbar() {
             <Link
               to="/donate"
               onClick={closeMenu}
-              className="group mt-auto flex items-center justify-between gap-3 overflow-hidden rounded-2xl bg-gradient-to-r from-amber-400 to-amber-300 p-4 text-slate-950 shadow-md shadow-amber-900/10 transition hover:-translate-y-0.5 hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-700 focus-visible:ring-offset-2"
+              className="group mt-auto flex items-center justify-between gap-3 overflow-hidden rounded-2xl bg-gradient-to-r from-amber-400 to-amber-300 p-4 text-slate-950 shadow-md shadow-amber-900/10 transition hover:-translate-y-0.5 hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-700 focus-visible:ring-offset-2"
             >
               <span>
                 <span className="block text-xs font-semibold text-amber-950/75">

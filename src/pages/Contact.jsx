@@ -51,11 +51,11 @@ export default function Contact() {
   return (
     <section className="relative -mx-4 flex-1 overflow-hidden bg-slate-50 px-4 py-12 sm:py-16">
       <div className="pointer-events-none absolute -right-24 -top-24 h-80 w-80 rounded-full bg-orange-200/50 blur-3xl" />
-      <div className="pointer-events-none absolute -bottom-24 -left-24 h-80 w-80 rounded-full bg-green-200/50 blur-3xl" />
+      <div className="pointer-events-none absolute -bottom-24 -left-24 h-80 w-80 rounded-full bg-blue-200/50 blur-3xl" />
 
       <div className="relative mx-auto max-w-7xl">
         <header className="mb-10 text-center">
-          <p className="mb-3 text-sm font-bold uppercase tracking-[0.2em] text-green-700">
+          <p className="mb-3 text-sm font-bold uppercase tracking-[0.2em] text-blue-700">
             We’d love to hear from you
           </p>
           <h1 className="text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">
@@ -68,9 +68,9 @@ export default function Contact() {
         </header>
 
         <div className="grid gap-8 lg:grid-cols-[0.85fr_1.15fr]">
-          <aside className="rounded-3xl bg-green-800 p-7 text-white shadow-xl sm:p-9">
+          <aside className="rounded-3xl bg-blue-800 p-7 text-white shadow-xl sm:p-9">
             <h2 className="text-2xl font-bold">Get in touch</h2>
-            <p className="mt-3 leading-7 text-green-50/85">
+            <p className="mt-3 leading-7 text-blue-50/85">
               We’re a community organization based in Nangkhel, Suryabinayak.
               Contact us to learn more about our work.
             </p>
@@ -82,7 +82,7 @@ export default function Contact() {
                 </span>
                 <div>
                   <h3 className="font-semibold">Our location</h3>
-                  <p className="mt-1 text-sm leading-6 text-green-50/85">
+                  <p className="mt-1 text-sm leading-6 text-blue-50/85">
                     Nangkhel, Suryabinayak,
                     <br />
                     Bhaktapur, Nepal
@@ -98,7 +98,7 @@ export default function Contact() {
                   <h3 className="font-semibold">Call us</h3>
                   <a
                     href="tel:+9779860117094"
-                    className="mt-1 inline-block text-sm text-green-50/85 transition hover:text-white hover:underline"
+                    className="mt-1 inline-block text-sm text-blue-50/85 transition hover:text-white hover:underline"
                   >
                     +977-9860117094
                   </a>
@@ -110,7 +110,7 @@ export default function Contact() {
               href={directionsUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-8 inline-flex rounded-lg bg-orange-400 px-5 py-3 font-semibold text-slate-950 transition hover:bg-orange-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-green-800"
+              className="mt-8 inline-flex rounded-lg bg-orange-400 px-5 py-3 font-semibold text-slate-950 transition hover:bg-orange-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-blue-800"
             >
               Get directions
               <span className="ml-2" aria-hidden="true">↗</span>
@@ -145,7 +145,7 @@ export default function Contact() {
                   name="user_name"
                   autoComplete="name"
                   required
-                  className="w-full rounded-xl border border-slate-300 px-4 py-3 text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-green-600 focus:ring-4 focus:ring-green-100"
+                  className="w-full rounded-xl border border-slate-300 px-4 py-3 text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-blue-600 focus:ring-4 focus:ring-blue-100"
                   placeholder="Enter your name"
                 />
               </div>
@@ -160,7 +160,7 @@ export default function Contact() {
                   name="user_email"
                   autoComplete="email"
                   required
-                  className="w-full rounded-xl border border-slate-300 px-4 py-3 text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-green-600 focus:ring-4 focus:ring-green-100"
+                  className="w-full rounded-xl border border-slate-300 px-4 py-3 text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-blue-600 focus:ring-4 focus:ring-blue-100"
                   placeholder="you@example.com"
                 />
               </div>
@@ -175,7 +175,7 @@ export default function Contact() {
                   name="user_phone"
                   autoComplete="tel"
                   required
-                  className="w-full rounded-xl border border-slate-300 px-4 py-3 text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-green-600 focus:ring-4 focus:ring-green-100"
+                  className="w-full rounded-xl border border-slate-300 px-4 py-3 text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-blue-600 focus:ring-4 focus:ring-blue-100"
                   placeholder="+977 98XXXXXXXX"
                 />
               </div>
@@ -189,7 +189,7 @@ export default function Contact() {
                   name="message"
                   rows={5}
                   required
-                  className="w-full resize-y rounded-xl border border-slate-300 px-4 py-3 text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-green-600 focus:ring-4 focus:ring-green-100"
+                  className="w-full resize-y rounded-xl border border-slate-300 px-4 py-3 text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-blue-600 focus:ring-4 focus:ring-blue-100"
                   placeholder="How can we help?"
                 />
               </div>
@@ -198,7 +198,7 @@ export default function Contact() {
                 <p
                   className={`text-sm ${
                     submissionMessage.type === "success"
-                      ? "text-green-700"
+                      ? "text-blue-700"
                       : "text-red-700"
                   }`}
                   role={submissionMessage.type === "success" ? "status" : "alert"}
@@ -210,7 +210,7 @@ export default function Contact() {
               <button
                 type="submit"
                 disabled={sending}
-                className="w-full rounded-xl bg-green-700 px-5 py-3.5 font-bold text-white transition hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-200 disabled:cursor-wait disabled:opacity-60"
+                className="w-full rounded-xl bg-blue-700 px-5 py-3.5 font-bold text-white transition hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-200 disabled:cursor-wait disabled:opacity-60"
               >
                 {sending ? "Sending..." : "Send Message"}
               </button>

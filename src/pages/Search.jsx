@@ -85,7 +85,7 @@ export default function Search() {
 
   return (
     <section className="mx-auto min-h-[55vh] max-w-5xl py-10 sm:py-14">
-      <p className="mb-2 text-sm font-semibold uppercase tracking-wide text-green-700">
+      <p className="mb-2 text-sm font-semibold uppercase tracking-wide text-blue-700">
         Search
       </p>
       <h1 className="text-3xl font-bold text-slate-900 sm:text-4xl">
@@ -96,11 +96,11 @@ export default function Search() {
         <div className="mt-8 divide-y divide-slate-200 rounded-2xl border border-slate-200 bg-white px-5 shadow-sm sm:px-7">
           {results.map((result) => (
             <article key={`${result.page}-${result.title}`} className="py-5">
-              <p className="mb-1 text-xs font-semibold uppercase tracking-wide text-green-700">
+              <p className="mb-1 text-xs font-semibold uppercase tracking-wide text-blue-700">
                 {result.page}
               </p>
               <h2 className="text-lg font-semibold text-slate-900">
-                <Link to={result.path} className="hover:text-green-700">
+                <Link to={result.path} className="hover:text-blue-700">
                   {result.title}
                 </Link>
               </h2>

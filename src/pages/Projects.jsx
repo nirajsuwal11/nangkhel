@@ -181,7 +181,7 @@ export default function Projects() {
             </article>
 
             <article className="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-amber-100 sm:p-8">
-              <span className="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-emerald-100 text-2xl">
+              <span className="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-blue-100 text-2xl">
                 ♬
               </span>
               <h3 className="mb-3 text-xl font-bold text-slate-900">
@@ -194,7 +194,7 @@ export default function Projects() {
               <ul className="grid gap-2 text-slate-700 sm:grid-cols-2 lg:grid-cols-1">
                 {performanceTypes.map((performance) => (
                   <li key={performance} className="flex items-start gap-2">
-                    <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-600" aria-hidden="true" />
+                    <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-blue-600" aria-hidden="true" />
                     <span>{performance}</span>
                   </li>
                 ))}

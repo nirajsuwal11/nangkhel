@@ -141,7 +141,7 @@ export default function About({ showHero = true }) {
       {showHero ? (
         <section className="mx-auto grid max-w-5xl gap-10 px-4 py-12 md:grid-cols-2 md:px-0">
           <div className="rounded-xl bg-white p-6 shadow-lg md:p-10">
-            <h2 className="mb-4 text-2xl font-semibold text-green-600">
+            <h2 className="mb-4 text-2xl font-semibold text-blue-600">
               Our Mission
             </h2>
             <p className="leading-relaxed text-gray-700">
@@ -150,7 +150,7 @@ export default function About({ showHero = true }) {
           </div>
 
           <div className="rounded-xl bg-white p-6 shadow-lg md:p-10">
-            <h2 className="mb-4 text-2xl font-semibold text-green-600">
+            <h2 className="mb-4 text-2xl font-semibold text-blue-600">
               Our Vision
             </h2>
             <p className="leading-relaxed text-gray-700">
@@ -291,7 +291,7 @@ The club believes that young people are not only the future of a community but a
       <section className="-mx-4 bg-slate-100 px-4 py-12">
         <div className="mx-auto w-full max-w-6xl sm:px-2 lg:px-4">
           <header className="mx-auto mb-10 max-w-3xl text-center">
-            <h2 className="text-3xl font-bold text-green-700 sm:text-4xl">
+            <h2 className="text-3xl font-bold text-blue-700 sm:text-4xl">
               Meet Our Team
             </h2>
             <p className="mt-3 text-base italic leading-relaxed text-slate-700">
@@ -346,7 +346,7 @@ The club believes that young people are not only the future of a community but a
 
             {members.length > 0 && (
               <div className="w-full">
-                <h3 className="mb-5 text-center text-sm font-bold uppercase tracking-[0.18em] text-emerald-800">
+                <h3 className="mb-5 text-center text-sm font-bold uppercase tracking-[0.18em] text-blue-800">
                   Members
                 </h3>
                 <div className="mx-auto grid max-w-5xl grid-cols-2 gap-6 sm:grid-cols-3 sm:gap-8 lg:grid-cols-4">

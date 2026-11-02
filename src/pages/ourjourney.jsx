@@ -7,7 +7,7 @@ export default function OurJourney() {
           aria-hidden="true"
         />
         <div
-          className="absolute -bottom-32 -left-20 -z-10 h-80 w-80 rounded-full bg-emerald-500/10 blur-3xl"
+          className="absolute -bottom-32 -left-20 -z-10 h-80 w-80 rounded-full bg-blue-500/10 blur-3xl"
           aria-hidden="true"
         />
         <div className="mx-auto w-full max-w-5xl">
