@@ -4,7 +4,9 @@ import EventActivityNav from "../components/EventActivityNav";
 import { activities } from "./activitiesData";
 
 export default function Activities() {
-  const featuredActivity = activities.find((activity) => activity.coverImage);
+  const featuredActivity = activities.find(
+    (activity) => activity.id === "cultural-baja-dance",
+  );
 
   return (
     <main className="-mx-4 flex-1 bg-slate-50">
@@ -64,7 +66,7 @@ export default function Activities() {
                 aria-hidden="true"
               />
               <span className="absolute left-5 top-5 rounded-full border border-white/20 bg-slate-950/40 px-3 py-1.5 text-xs font-semibold text-white backdrop-blur-md sm:left-7 sm:top-7">
-                Featured activity
+                Story 08
               </span>
               <span className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-4 p-5 sm:p-7">
                 <span>

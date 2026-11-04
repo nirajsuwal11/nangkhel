@@ -5,10 +5,20 @@ import communityServiceCover from "../assets/workareas/commmunity service.jpg";
 import culturalHeritageCover from "../assets/workareas/cultural heritage.jpg";
 import environmentCover from "../assets/workareas/environmental conservation.jpg";
 import youthCover from "../assets/workareas/youth activities.jpg";
+import story8Cover from "../assets/gallery/story8/Main.jpg";
 
 const speakingGallery = Object.entries(
   import.meta.glob(
     "../assets/publicspeaking/*.{jpg,jpeg,png,webp,JPG,JPEG,PNG,WEBP}",
+    { eager: true, import: "default" },
+  ),
+)
+  .sort(([firstPath], [secondPath]) => firstPath.localeCompare(secondPath))
+  .map(([, image]) => image);
+
+const story8Gallery = Object.entries(
+  import.meta.glob(
+    "../assets/gallery/story8/*.{jpg,jpeg,png,webp,JPG,JPEG,PNG,WEBP}",
     { eager: true, import: "default" },
   ),
 )
@@ -85,7 +95,7 @@ export const activities = [
     title: "Nangkhel Cultural Baja and Dance",
     description:
       "Celebrated Nangkhel’s cultural identity through traditional music and dance, helping pass local heritage on to the next generation.",
-    gallery: [],
-    coverImage: culturalProgramCover,
+    gallery: story8Gallery,
+    coverImage: story8Cover,
   },
 ];

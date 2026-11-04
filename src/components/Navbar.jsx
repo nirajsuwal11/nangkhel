@@ -118,7 +118,7 @@ export default function Navbar() {
                 The Lions Of Nangkhel
               </span>
               <span className="mt-1 block text-[10px] font-medium text-slate-500 sm:text-xs">
-                Together we make the difference
+                "Preservation of Ancient History, Creation of a New Generation."
               </span>
             </span>
           </Link>
@@ -150,7 +150,7 @@ export default function Navbar() {
         id="mobile-navigation-drawer"
         aria-hidden={!isOpen}
         inert={!isOpen}
-        className="fixed inset-0 top-[76px] z-40 md:hidden"
+        className="fixed inset-0 z-40 md:hidden"
       >
         <button
           type="button"
@@ -166,7 +166,7 @@ export default function Navbar() {
             isOpen ? "translate-x-0" : "-translate-x-full"
           }`}
         >
-          <div className="flex flex-1 flex-col px-4 pb-5 pt-5">
+          <div className="flex flex-1 flex-col px-4 pb-5 pt-24">
             <SearchForm mobile onSearch={submitSearch} />
             <p className="mb-2 mt-4 px-2 text-[11px] font-bold uppercase tracking-[0.18em] text-slate-400">
               Navigate
