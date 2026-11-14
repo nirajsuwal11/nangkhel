@@ -3,7 +3,7 @@ import { MapPin, Phone } from "lucide-react";
 import emailjs from "@emailjs/browser";
 
 const mapUrl =
-  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d205.60207041842503!2d85.45110780180838!3d27.649194014291574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb0fee5acf703b%3A0xeb35333a3f3f4676!2sNandikeshwar%20Mahadev%20Temple!5e1!3m2!1sen!2snp!4v1794663562676!5m2!1sen!2snp";
+  "https://www.google.com/maps/embed?pb=!3m2!1sen!2snp!4v1794664216462!5m2!1sen!2snp!6m8!1m7!1sJs2MynvUF89_8pSSZGbegg!2m2!1d27.64898513045781!2d85.45117452471307!3f31.405537!4f0!5f0.7820865974627469";
 const directionsUrl =
   "https://www.google.com/maps/search/?api=1&query=Nangkhel%2C+Suryabinayak%2C+Nepal";
 

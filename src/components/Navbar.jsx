@@ -17,7 +17,7 @@ import logo from "../assets/logo.png";
 const links = [
   { label: "About", to: "/about", icon: <Info size={18} strokeWidth={1.9} aria-hidden="true" /> },
   { label: "Journey", to: "/ourjourney", icon: <Route size={18} strokeWidth={1.9} aria-hidden="true" /> },
-  { label: "Activities/Events", to: "/projects", icon: <CalendarDays size={18} strokeWidth={1.9} aria-hidden="true" /> },
+  { label: "Events", to: "/projects", icon: <CalendarDays size={18} strokeWidth={1.9} aria-hidden="true" /> },
   { label: "Donate", to: "/donate", icon: <HeartHandshake size={18} strokeWidth={1.9} aria-hidden="true" /> },
   { label: "Contact", to: "/contact", icon: <Mail size={18} strokeWidth={1.9} aria-hidden="true" /> },
 ];
